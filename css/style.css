@@ -262,7 +262,6 @@ a:focus {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 /*end header section*/
@@ -378,7 +377,7 @@ a:focus {
   height: 50px;
   z-index: 5;
   opacity: 1;
-  border-radius: 5px;
+  border-radius: 50%;
   font-size: 12px;
   background-color: #e45441;
   color: white;
@@ -551,6 +550,7 @@ a:focus {
   object-fit: cover;
 }
 
+
 .slider_section .img_container {
   height: 400px; /* ปรับให้เหมาะสม */
   overflow: hidden;
@@ -561,6 +561,12 @@ a:focus {
   height: 100%;
 }
 
+.slider_section a {
+  background-color: #3a3f58;
+  border-color: #3a3f58;
+  color: #ffffff;
+  transition: all .2s;
+}
 
 .service_section .box .detail-box {
   background-color: #3a3f58;
