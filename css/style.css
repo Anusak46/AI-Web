@@ -302,12 +302,12 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider_section .detail-box {
@@ -348,6 +348,15 @@ a:focus {
   background-color: transparent;
   color: #ffffff;
 }
+
+.carousel-caption {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 .slider_section .img-box img {
   min-width: 100%;
@@ -536,18 +545,22 @@ a:focus {
   position: relative;
 }
 
-.service_section .box .img-box {
-  position: relative;
-  width: 145px;
-  height: 145px;
-  margin-bottom: -72.5px;
+.slider_section .carousel-item .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.service_section .box .img-box img {
-  width: 100%;
-  border-radius: 100%;
-  border: 5px solid #ffffff;
+.slider_section .img_container {
+  height: 400px; /* ปรับให้เหมาะสม */
+  overflow: hidden;
 }
+
+.slider_section .img-box {
+  width: 100%;
+  height: 100%;
+}
+
 
 .service_section .box .detail-box {
   background-color: #3a3f58;
