@@ -7,6 +7,120 @@ body {
   overflow-x: hidden;
 }
 
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gallery Title Styling */
+.heading_container {
+  text-align: center;
+  padding: 20px 0; /* เว้นช่องว่างด้านบน */
+}
+
+.gallery-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Horizontal Scroll Styling */
+.horizontal-scroll {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll Container */
+.scroll-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  gap: 15px;
+}
+
+/* Scroll Items */
+.scroll-item {
+  flex: 0 0 auto;
+  width: 250px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.scroll-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px; /* ทำให้การ์ดเป็นวงรี */
+}
+
+.scroll-item .text-container {
+  padding: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Bottom button container */
+.bottom-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* ช่องว่างระหว่าง Scroll กับปุ่มด้านล่าง */
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  background-color: #e45441;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+.bottom-btn1 {
+  background-color: #e45441;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+  transform: scale(1.1);
+}
+
+.left-btn {
+  position: absolute;
+  left: 10px;
+}
+
+.right-btn {
+  position: absolute;
+  right: 10px;
+}
+
+.scroll-btn:hover {
+  background-color: #c73c32;
+}
+
+
 .layout_padding {
   padding: 90px 0;
 }

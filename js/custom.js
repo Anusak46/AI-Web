@@ -1,31 +1,45 @@
-// to get current year
-function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
-}
-
-getYear();
-
-// overlay menu
-function openNav() {
-    document.getElementById("myNav").classList.toggle("menu_width");
-    document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
-}
-
-
-/** google_map js **/
-
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollContainer = document.querySelector('.scroll-container');
+    const btnLeft = document.querySelector('.left-btn');
+    const btnRight = document.querySelector('.right-btn');
+  
+    // Duplicate items to allow seamless infinite scroll
+    const items = document.querySelectorAll('.scroll-item');
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      scrollContainer.appendChild(clone);
+    });
+  
+    // Function to scroll left
+    const scrollLeft = () => {
+      scrollContainer.scrollBy({
+        left: -200, 
+        behavior: 'smooth',
+      });
+  
+      // Reset logic to simulate infinite effect
+      if (scrollContainer.scrollLeft <= 0) {
+        scrollContainer.scrollLeft += scrollContainer.scrollWidth / 2;
+      }
     };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
-
-// lightbox gallery
-$(document).on("click", '[data-toggle="lightbox"]', function (event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
+  
+    // Function to scroll right
+    const scrollRight = () => {
+      scrollContainer.scrollBy({
+        left: 500,
+        behavior: 'smooth',
+      });
+  
+      // Reset logic to simulate infinite effect
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollContainer.scrollLeft -= scrollContainer.scrollWidth / 2;
+      }
+    };
+  
+    btnLeft.addEventListener('click', scrollLeft);
+    btnRight.addEventListener('click', scrollRight);
+  
+    // Set initial scroll to the middle
+    scrollContainer.scrollLeft = scrollContainer.scrollWidth / 2;
+  });
+  
