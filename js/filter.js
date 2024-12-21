@@ -15,9 +15,9 @@ ratingStars.forEach((star, index) => {
     });
 });
 
-// ฟังก์ชันรวบรวมข้อมูลจากฟอร์ม
 function collectTravelData(destination) {
     const days = document.getElementById('days').value;
+    const startDate = document.getElementById('start-date').value;
     const startLocation = document.getElementById('start-location').value;
 
     const selectedLifestyles = Array.from(document.querySelectorAll('.chip.active')).map(chip => chip.textContent);
@@ -28,6 +28,7 @@ function collectTravelData(destination) {
 
     return {
         days: days,
+        startDate: startDate,
         startLocation: startLocation,
         lifestyles: selectedLifestyles,
         vehicles: selectedVehicles,

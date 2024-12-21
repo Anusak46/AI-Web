@@ -1240,7 +1240,8 @@ a:focus {
 }
 
 .filter input[type="text"],
-.filter input[type="number"] {
+.filter input[type="number"],
+.filter input[type="date"] {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
@@ -1250,7 +1251,8 @@ a:focus {
 }
 
 .filter input[type="text"]:focus,
-.filter input[type="number"]:focus {
+.filter input[type="number"]:focus,
+.filter input[type="date"]:focus {
   border-color: #e45441;
   outline: none;
 }
