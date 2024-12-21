@@ -1211,4 +1211,111 @@ a:focus {
   color: inherit;
 }
 
+.filter {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.filter h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+.filter .form-group {
+  margin-bottom: 20px;
+}
+
+.filter label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555555;
+}
+
+.filter input[type="text"],
+.filter input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.filter input[type="text"]:focus,
+.filter input[type="number"]:focus {
+  border-color: #e45441;
+  outline: none;
+}
+
+.filter .chip-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter .chip {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter .chip.active {
+  background: #e45441;
+  color: #ffffff;
+}
+
+.filter #vehicle label {
+  margin-right: 15px;
+  font-size: 1rem;
+  color: #444444;
+}
+
+.filter .rating span {
+  font-size: 1.8rem;
+  color: gold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.filter .rating span.inactive {
+  color: #cccccc;
+}
+
+.filter #food-inclusion label {
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.filter .bottom-bar {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.filter .generate-button {
+  background: #3a3f58;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter .generate-button:hover {
+  background: #3a3f58;
+}
+
 /*# sourceMappingURL=style.css.map */
