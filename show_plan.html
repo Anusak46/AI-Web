@@ -38,6 +38,7 @@
     <!-- end header section -->
 
     <!-- about section -->
+    <!-- about section -->
     <section class="about_section layout_padding">
         <div class="container">
             <div class="row">
@@ -51,16 +52,11 @@
                         <div class="heading_container">
                             <h2>Ayutthaya</h2>
                         </div>
-                        <p>
-                            สถานที่ท่องเที่ยว 1
-                        </p>
-                        <p>
-                            สถานที่ท่องเที่ยว 2
-                        </p>
-                        <p>
-                            สถานที่ท่องเที่ยว 3
-                        </p>
-                        <a href="#">Read More</a>
+                        <p>สถานที่ท่องเที่ยว 1</p>
+                        <p>สถานที่ท่องเที่ยว 2</p>
+                        <p>สถานที่ท่องเที่ยว 3</p>
+                        <!-- เพิ่มการเชื่อมโยงไปยัง Modal สำหรับ Plan 1 -->
+                        <a href="#" class="btn-read-more" data-toggle="modal" data-target="#modalPlan1">Read All</a>
                     </div>
                 </div>
             </div>
@@ -77,25 +73,98 @@
                         <div class="heading_container">
                             <h2>Ayutthaya</h2>
                         </div>
-                        <p>
-                            สถานที่ท่องเที่ยว 1
-                        </p>
-                        <p>
-                            สถานที่ท่องเที่ยว 2
-                        </p>
-                        <p>
-                            สถานที่ท่องเที่ยว 3
-                        </p>
-                        <a href="#">Read More</a>
+                        <p>สถานที่ท่องเที่ยว 1</p>
+                        <p>สถานที่ท่องเที่ยว 2</p>
+                        <p>สถานที่ท่องเที่ยว 3</p>
+                        <!-- เพิ่มการเชื่อมโยงไปยัง Modal สำหรับ Plan 2 -->
+                        <a href="#" class="btn-read-more" data-toggle="modal" data-target="#modalPlan2">Read All</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-bar">
-            <button class="back-button">Back</button>
-            <button class="generate-button">Re-generate</button>
-        </div>
     </section>
+
+    <!-- Modal สำหรับ Plan 1 -->
+    <div class="modal fade" id="modalPlan1" tabindex="-1" role="dialog" aria-labelledby="modalPlan1Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPlan1Label">Plan 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="day">
+                        <h2>Day 1</h2>
+                        <ul>
+                            <li>Visit Temple 1</li>
+                            <li>Explore Market</li>
+                            <li>Lunch at Restaurant 1</li>
+                            <li>Evening Boat Ride</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h2>Day 2</h2>
+                        <ul>
+                            <li>Visit Museum</li>
+                            <li>Explore Historical Site</li>
+                            <li>Lunch at Restaurant 2</li>
+                            <li>Shopping at Local Store</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับ Plan 2 -->
+    <div class="modal fade" id="modalPlan2" tabindex="-1" role="dialog" aria-labelledby="modalPlan2Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPlan2Label">Plan 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="day">
+                        <h2>Day 1</h2>
+                        <ul>
+                            <li></li>
+                            <li>Explore Market</li>
+                            <li>Lunch at Restaurant 1</li>
+                            <li>Evening Boat Ride</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <h2>Day 2</h2>
+                        <ul>
+                            <li>Visit Museum</li>
+                            <li>Explore Historical Site</li>
+                            <li>Lunch at Restaurant 2</li>
+                            <li>Shopping at Local Store</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <a href="Choos_Province_All.html" class="back-button">Back</a>
+        <a href="#" class="re-button">Re-generate</a>
+    </div>
+
 
     <!-- footer section -->
     <footer class="footer_section">

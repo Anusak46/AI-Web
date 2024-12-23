@@ -8,6 +8,217 @@ body {
   overflow-x: hidden;
 }
 
+.btn-read-more {
+  display: inline-block;
+  /* ทำให้ลิงก์ทำตัวเหมือนปุ่ม */
+  padding: 10px 20px;
+  /* ระยะห่างภายในปุ่ม */
+  font-size: 16px;
+  /* ขนาดตัวอักษร */
+  color: #fff;
+  /* สีของตัวอักษร */
+  background-color: #007bff;
+  /* สีพื้นหลังของปุ่ม */
+  border: none;
+  /* เอาขอบของปุ่มออก */
+  border-radius: 5px;
+  /* ทำให้มุมปุ่มโค้ง */
+  text-align: center;
+  /* จัดตำแหน่งข้อความให้ตรงกลาง */
+  text-decoration: none;
+  /* เอาขีดเส้นใต้ของลิงก์ออก */
+  font-weight: bold;
+  /* ทำให้ข้อความหนา */
+  transition: background-color 0.3s, transform 0.3s;
+  /* เอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+.btn-read-more:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  /* ยกปุ่มขึ้นเล็กน้อยเมื่อชี้ */
+}
+
+/* เปลี่ยนสีเมื่อคลิก */
+.btn-read-more:active {
+  background-color: #004085;
+  transform: translateY(0);
+  /* คืนตำแหน่งเมื่อคลิก */
+}
+
+.modal-body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.modal-body h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+}
+
+.day {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.day h2 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.day ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.day ul li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.btn-secondary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+}
+
+.modal-body .day h2 {
+  font-size: 28px;
+  color: #555;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  /* เส้นบรรทัดใต้หัวข้อ */
+}
+
+.modal-body .day ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-body .day ul li {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.modal-body .ellipsis {
+  text-align: center;
+  font-size: 24px;
+  color: #aaa;
+  margin-top: 30px;
+}
+
+.modal-body .day-n {
+  font-size: 18px;
+  color: #444;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.modal-body .back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.modal-body .back-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-header {
+  border-bottom: 1px solid #eee;
+  background-color: #f7f7f7;
+  padding: 15px 30px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  /* เส้นใต้ชื่อหัวข้อ */
+  padding-bottom: 5px;
+}
+
+/* ปรับแต่งปุ่มปิด */
+.close {
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.back-button {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+.re-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+}
+
+.re-button:hover {
+  background-color: #45a049;
+}
+
+
 /* General Reset */
 * {
   margin: 0;
@@ -64,7 +275,8 @@ body {
 
 .container-fluid1 {
   display: flex;
-  justify-content: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+  justify-content: center;
+  /* จัดให้อยู่กึ่งกลางในแนวนอน */
   background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 10px;
@@ -73,10 +285,13 @@ body {
 
 .row1 {
   display: flex;
-  gap: 20px;              /* ระยะห่างระหว่างการ์ด */
-  overflow-x: auto;       /* เพิ่มการเลื่อนแนวนอนถ้าจำเป็น */
+  gap: 20px;
+  /* ระยะห่างระหว่างการ์ด */
+  overflow-x: auto;
+  /* เพิ่มการเลื่อนแนวนอนถ้าจำเป็น */
   padding: 10px;
 }
+
 .flex-nowrap {
   white-space: nowrap;
   overflow-x: auto;
